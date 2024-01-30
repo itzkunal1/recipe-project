@@ -1,0 +1,129 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+  background: linear-gradient(90deg, #ba285d, #ff4c68, #ea5642);
+}
+header{
+    padding: 20px;
+    display: flex;
+    border: 2px solid black;
+    justify-content:space-between;
+    align-items:center ;
+    background-color: rgb(186, 91, 181);
+}
+header nav h1{
+    letter-spacing: 2px ;
+}
+button{
+    border-radius: 10px;
+    height: 4vh;
+    width: 12vw;
+    background-color: black;
+    font-size: 2vh;
+    color: #a94e9a;
+    cursor: pointer;
+    /* font-weight:bolder; */
+    /* box-shadow: 3px 3px 3px   6px #df8c1f; */
+}
+input{
+    border-radius: 10px;
+    height: 5vh;
+    width: 22vw;
+    background-color: #040304;
+    color: #a94e9a;
+    /* font-family:'Courier New', Courier, monospace; */
+    font-size: 2vh;
+}
+.main-wala-div {
+    /* width: 100%; */
+    margin-left: 60px;
+    justify-content:space-around;
+    display:grid;
+    grid-template-columns: repeat(3,400px);
+    grid-gap: 40px;
+} 
+.recipes{
+    height: 450px;
+    background-color: #fefcfc;
+    max-width: 300px;
+    border-radius: 12px;
+transition: 0.5s ease-in;
+}
+.recipes:hover{
+    transform:scale(1.1);
+}
+.recipes img{
+    border-radius: 12px;
+    height:300px;
+ width: 300px;
+}
+.recipes h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+p{
+    text-align: center;
+    font-weight: 100;
+}
+.main-wala-div h1{
+    margin-top: 50px;
+    font-style:oblique;
+    font-size: 20px;
+}
+::placeholder{
+    color: #a94e9a; 
+}
+ .main-wala-div div button{
+    width: 200px;
+    height: 40px;
+    margin: 8px 0px 0 50px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+.closing-div{
+    border-radius: 12px;
+    display: none;
+    height: 700px;
+    width: 700px;
+    background-color: rgb(234, 199, 156);
+    position:fixed;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+    transition: all 1.5s ease-in-out;
+    overflow-y: scroll;
+}
+.ingredient-List{
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: small;
+}
+.Instructions{
+ line-height: 30px;
+ white-space: pre-line;
+}
+.names{
+    font-style:italic;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+.closebtn{
+    position: absolute;
+    top:20px;
+    right: 20px;
+ border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #f80303;
+    color: #040304;
+
+}
